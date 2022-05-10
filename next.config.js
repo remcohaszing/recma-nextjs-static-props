@@ -1,3 +1,4 @@
+// @ts-expect-error https://github.com/vercel/next.js/pull/36815
 import nextMDX from '@next/mdx'
 import recmaNextjsStaticProps from 'recma-nextjs-static-props'
 import { rehypeMdxTitle } from 'rehype-mdx-title'
