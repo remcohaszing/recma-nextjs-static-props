@@ -1,0 +1,6 @@
+.next/
+coverage/
+node_modules/
+*.d.ts
+*.tgz
+tsconfig.tsbuildinfo

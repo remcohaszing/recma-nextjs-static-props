@@ -1,0 +1,57 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['*']
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npx eslint .
+
+  jest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 16, 18]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.version }}
+      - run: npm ci
+      - run: npx jest
+
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npm pack
+
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npx prettier --check .
+
+  tsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: { node-version: 18 }
+      - run: npm ci
+      - run: npx tsc

@@ -1,0 +1,21 @@
+---
+description: This works great with remark-mdx-frontmatter
+---
+
+import { PropsList } from '../components/PropsList'
+
+export const variable = 'All top-level variables are exported through props'
+
+{/* This works with rehype-mdx-title too */}
+
+# MDX demo
+
+## Props
+
+Any exports are also available as props in the page now, but serialized as JSON.
+
+<PropsList {...props} />
+
+## Links
+
+[Markdown example](/markdown)
