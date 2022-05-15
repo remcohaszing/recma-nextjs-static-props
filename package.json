@@ -1,7 +1,7 @@
 {
   "name": "recma-nextjs-static-props",
   "version": "1.0.0",
-  "description": "Expose top-level identifiers in Next.js app.js",
+  "description": "Generate getStaticProps exposing top level identifiers",
   "type": "module",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",

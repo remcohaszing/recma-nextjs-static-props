@@ -1,6 +1,7 @@
 # recma-nextjs-static-props
 
-> Expose top-level identifiers in Next.js app.js
+> Generate [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
+> exposing top level identifiers
 
 ## Installation
 
