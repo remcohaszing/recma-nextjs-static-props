@@ -10,7 +10,9 @@ npm install recma-nexjs-static-props
 
 ## Usage
 
-This plugin is intended for use with [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com).
+This plugin is intended for use with [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com). It
+injects a `getStaticProps` function which exposes all top level identifiers. This means these
+variable are available in [`pages/_app.js`](https://nextjs.org/docs/advanced-features/custom-app).
 
 ```js
 import nextMDX from '@next/mdx'
@@ -23,6 +25,37 @@ const withMDX = nextMDX({
 })
 
 export default withMDX()
+```
+
+This roughly transforms the following MDX:
+
+```mdx
+export const title = 'My document'
+export const description = 'This is my document'
+
+Hello Next
+```
+
+into the following JavaScript:
+
+```js
+import { jsx } from 'react/jsx-runtime'
+
+export const title = 'My document'
+export const description = 'This is my document'
+
+export default function MDXContent() {
+  return jsx('p', { children: ['Hello Next'] })
+}
+
+export const getStaticProps = () => ({
+  props: JSON.parse(
+    JSON.stringify({
+      description,
+      title,
+    }),
+  ),
+})
 ```
 
 ## API
