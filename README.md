@@ -1,5 +1,9 @@
 # recma-nextjs-static-props
 
+[![ci](https://github.com/remcohaszing/recma-nextjs-static-props/actions/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/recma-nextjs-static-props/actions/workflows/ci.yaml)
+[![npm badge](https://img.shields.io/npm/v/recma-nextjs-static-props)](https://www.npmjs.com/package/recma-nextjs-static-props)
+[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
+
 > Generate [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
 > exposing top level identifiers
 
