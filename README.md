@@ -6,7 +6,7 @@
 ## Installation
 
 ```sh
-npm install recma-nexjs-static-props
+npm install recma-nextjs-static-props
 ```
 
 ## Usage
