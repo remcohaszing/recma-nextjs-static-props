@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps): ReactNode {
       <Head>
         <title>{pageProps.title}</title>
         <meta content={pageProps.description} name="description" />
+        <meta content="light dark" name="color-scheme" />
       </Head>
       All page props are available in the <code>pages/_app.js</code> component.
       <PropsList {...pageProps} />
