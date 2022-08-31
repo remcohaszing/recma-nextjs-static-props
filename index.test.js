@@ -14,14 +14,14 @@ import defaultImported, { imported } from "module"
     `/*@jsxRuntime automatic @jsxImportSource react*/
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
 import defaultImported, {imported} from "module";
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const getStaticProps = () => ({
@@ -46,14 +46,14 @@ export const exported = ''
     `/*@jsxRuntime automatic @jsxImportSource react*/
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
 export const exported = '';
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const getStaticProps = () => ({
@@ -79,14 +79,14 @@ export function declared() {}
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
 export const exported = '';
 export function declared() {}
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const getStaticProps = () => ({
@@ -112,14 +112,14 @@ export function getStaticProps() {}
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
 export const exported = '';
 export function getStaticProps() {}
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 `,
@@ -132,14 +132,14 @@ it('should not insert getStaticProps if no variables are defined', async () => {
   expect(value).toBe(
     `/*@jsxRuntime automatic @jsxImportSource react*/
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 `,
@@ -158,14 +158,14 @@ export const exported = '';
     `/*@jsxRuntime automatic @jsxImportSource react*/
 import {Fragment as _Fragment, jsx as _jsx} from "react/jsx-runtime";
 export const exported = '';
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const custom = () => ({
@@ -206,14 +206,14 @@ export const ignored = '';
 export const string = '';
 export const regex_foo = '';
 export const fn = '';
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const getStaticProps = () => ({
@@ -258,14 +258,14 @@ export const ignored = '';
 export const string = '';
 export const regex_foo = '';
 export const fn = '';
+function _createMdxContent(props) {
+  return _jsx(_Fragment, {});
+}
 function MDXContent(props = {}) {
   const {wrapper: MDXLayout} = props.components || ({});
   return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {
-    children: _jsx(_createMdxContent, {})
-  })) : _createMdxContent();
-  function _createMdxContent() {
-    return _jsx(_Fragment, {});
-  }
+    children: _jsx(_createMdxContent, props)
+  })) : _createMdxContent(props);
 }
 export default MDXContent;
 export const getStaticProps = () => ({

@@ -1,9 +1,8 @@
-// @ts-expect-error https://github.com/vercel/next.js/pull/36815
 import nextMDX from '@next/mdx'
 import recmaNextjsStaticProps from 'recma-nextjs-static-props'
-import { rehypeMdxTitle } from 'rehype-mdx-title'
+import rehypeMdxTitle from 'rehype-mdx-title'
 import remarkFrontmatter from 'remark-frontmatter'
-import { remarkMdxFrontmatter } from 'remark-mdx-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 const withMDX = nextMDX({
   extension: /\.mdx?$/,

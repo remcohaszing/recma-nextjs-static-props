@@ -7,12 +7,4 @@ rules:
   import/no-extraneous-dependencies: off
   import/no-unresolved: off
 
-  jsdoc/check-param-names: off
-  jsdoc/check-tag-names: off
-  jsdoc/require-jsdoc: off
-  jsdoc/require-property-type: off
-  jsdoc/valid-types: off
-
-  node/no-unpublished-import: off
-
-  unicorn/import-index: off
+  n/no-extraneous-import: off

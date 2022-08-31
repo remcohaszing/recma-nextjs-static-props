@@ -21,8 +21,8 @@ import { analyze } from 'periscopic'
 /**
  * Check if a value matches a test.
  *
- * @param {Test} test - The test to match.
- * @param {string} value - The value to match against the test.
+ * @param {Test} test The test to match.
+ * @param {string} value The value to match against the test.
  * @returns {boolean} Whether or not the value matches the test.
  */
 function passTest(test, value) {
