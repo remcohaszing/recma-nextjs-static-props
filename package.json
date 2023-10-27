@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "test": "c8 node --test",
+    "test": "c8 node test.js",
     "prepack": "tsc --noEmit false --emitDeclarationOnly true"
   },
   "dependencies": {
