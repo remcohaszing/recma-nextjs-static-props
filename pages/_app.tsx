@@ -11,11 +11,15 @@ import { PropsList } from '../components/PropsList'
  * Because of `recma-nextjs-static-props`, you can use any exports from your MDX page here.
  */
 export default function App({ Component, pageProps }: AppProps): ReactNode {
+  const { frontmatter, title } = pageProps
+
   return (
     <main>
       <Head>
-        <title>{pageProps.title}</title>
-        <meta content={pageProps.frontmatter.description} name="description" />
+        {title ? <title>{title}</title> : undefined}
+        {frontmatter?.description ? (
+          <meta content={frontmatter.description} name="description" />
+        ) : undefined}
         <meta content="light dark" name="color-scheme" />
       </Head>
       All page props are available in the <code>pages/_app.js</code> component.
