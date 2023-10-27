@@ -1,11 +1,23 @@
 # recma-nextjs-static-props
 
 [![ci](https://github.com/remcohaszing/recma-nextjs-static-props/actions/workflows/ci.yaml/badge.svg)](https://github.com/remcohaszing/recma-nextjs-static-props/actions/workflows/ci.yaml)
-[![npm badge](https://img.shields.io/npm/v/recma-nextjs-static-props)](https://www.npmjs.com/package/recma-nextjs-static-props)
-[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
+[![codecov](https://codecov.io/gh/remcohaszing/recma-nextjs-static-props/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/recma-nextjs-static-props)
+[![npm version](https://img.shields.io/npm/v/recma-nextjs-static-props)](https://www.npmjs.com/package/recma-nextjs-static-props)
+[![npm downloads](https://img.shields.io/npm/dm/recma-nextjs-static-props)](https://www.npmjs.com/package/recma-nextjs-static-props)
 
-> Generate [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
-> exposing top level identifiers
+Generate [`getStaticProps`](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
+exposing top level identifiers
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+  - [Options](#options)
+- [Example](#example)
+- [Compatibility](#compatibility)
+- [Related Projects](#related-projects)
+- [License](#license)
 
 ## Installation
 
@@ -83,12 +95,16 @@ The source code repository for this plugin is setup as a [Next.js](https://nextj
 
 To try it yourself, simply clone, install, and run this project:
 
-```
+```sh
 git clone https://github.com/remcohaszing/recma-nextjs-static-props.git
 cd recma-nextjs-static-props
 npm ci
 npm run dev
 ```
+
+## Compatibility
+
+This project is compatible with Node.js 16 or greater.
 
 ## Related Projects
 
