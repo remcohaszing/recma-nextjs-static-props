@@ -1,9 +1,9 @@
-import { Fragment, ReactElement } from 'react'
+import { Fragment, type ReactNode } from 'react'
 
 /**
  * Render a list of available props.
  */
-export function PropsList(props: Record<string, unknown>): ReactElement {
+export function PropsList(props: Record<string, unknown>): ReactNode {
   return (
     <dl>
       {Object.entries(props).map(([key, value]) => (

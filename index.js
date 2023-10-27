@@ -5,25 +5,28 @@ import { analyze } from 'periscopic'
  */
 
 /**
- * @typedef {Object} RecmaNextjsStaticPropsOptions
+ * @typedef RecmaNextjsStaticPropsOptions
  * @property {string} [name='getStaticProps']
- * The name of the export to generate.
+ *   The name of the export to generate.
  * @property {Test[]} [include]
- * A list to filter identifiers to include in the generated function.
+ *   A list to filter identifiers to include in the generated function.
  *
- * This list may include strings which must be matched exactly, a regular expression to test
- * against, or a function that will be called with the value to test, and must return a boolean. By
- * default everything will be included.
+ *   This list may include strings which must be matched exactly, a regular expression to test
+ *   against, or a function that will be called with the value to test, and must return a boolean.
+ *   By default everything will be included.
  * @property {Test[]} [exclude]
- * The same as `include`, but matching values will be excluded instead.
+ *   The same as `include`, but matching values will be excluded instead.
  */
 
 /**
  * Check if a value matches a test.
  *
- * @param {Test} test The test to match.
- * @param {string} value The value to match against the test.
- * @returns {boolean} Whether or not the value matches the test.
+ * @param {Test} test
+ *   The test to match.
+ * @param {string} value
+ *   The value to match against the test.
+ * @returns {boolean}
+ *   Whether or not the value matches the test.
  */
 function passTest(test, value) {
   if (typeof test === 'string') {
@@ -116,7 +119,7 @@ const recmaNextjsStaticProps =
                         computed: false,
                         optional: false,
                         object: { type: 'Identifier', name: 'JSON' },
-                        property: { type: 'Identifier', name: 'parse' },
+                        property: { type: 'Identifier', name: 'parse' }
                       },
                       arguments: [
                         {
@@ -127,7 +130,7 @@ const recmaNextjsStaticProps =
                             computed: false,
                             optional: false,
                             object: { type: 'Identifier', name: 'JSON' },
-                            property: { type: 'Identifier', name: 'stringify' },
+                            property: { type: 'Identifier', name: 'stringify' }
                           },
                           arguments: [
                             {
@@ -139,20 +142,20 @@ const recmaNextjsStaticProps =
                                 computed: false,
                                 kind: 'init',
                                 key: { type: 'Identifier', name: id },
-                                value: { type: 'Identifier', name: id },
-                              })),
-                            },
-                          ],
-                        },
-                      ],
-                    },
-                  },
-                ],
-              },
-            },
-          },
-        ],
-      },
+                                value: { type: 'Identifier', name: id }
+                              }))
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
     })
   }
 

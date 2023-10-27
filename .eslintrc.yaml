@@ -1,10 +1,11 @@
 root: true
 extends:
   - remcohaszing
-  - remcohaszing/jest
 rules:
   import/extensions: off
   import/no-extraneous-dependencies: off
   import/no-unresolved: off
 
   n/no-extraneous-import: off
+
+  jsdoc/check-indentation: off

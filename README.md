@@ -25,8 +25,8 @@ import recmaNextjsStaticProps from 'recma-nextjs-static-props'
 
 const withMDX = nextMDX({
   options: {
-    recmaPlugins: [recmaNextjsStaticProps],
-  },
+    recmaPlugins: [recmaNextjsStaticProps]
+  }
 })
 
 export default withMDX()
@@ -57,9 +57,9 @@ export const getStaticProps = () => ({
   props: JSON.parse(
     JSON.stringify({
       description,
-      title,
-    }),
-  ),
+      title
+    })
+  )
 })
 ```
 

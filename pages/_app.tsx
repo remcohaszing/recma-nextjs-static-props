@@ -1,6 +1,6 @@
-import { AppProps } from 'next/app'
+import { type AppProps } from 'next/app'
 import Head from 'next/head'
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
 import { PropsList } from '../components/PropsList'
 
@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps): ReactNode {
     <main>
       <Head>
         <title>{pageProps.title}</title>
-        <meta content={pageProps.description} name="description" />
+        <meta content={pageProps.frontmatter.description} name="description" />
         <meta content="light dark" name="color-scheme" />
       </Head>
       All page props are available in the <code>pages/_app.js</code> component.

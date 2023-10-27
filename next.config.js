@@ -9,10 +9,10 @@ const withMDX = nextMDX({
   options: {
     remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
     rehypePlugins: [rehypeMdxTitle],
-    recmaPlugins: [recmaNextjsStaticProps],
-  },
+    recmaPlugins: [recmaNextjsStaticProps]
+  }
 })
 
 export default withMDX({
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
 })
