@@ -2,6 +2,7 @@ import { type AppProps } from 'next/app'
 import Head from 'next/head'
 import { type ReactNode } from 'react'
 
+import './global.css'
 import { PropsList } from '../components/PropsList'
 
 /**
