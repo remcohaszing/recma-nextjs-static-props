@@ -5,14 +5,10 @@
   "type": "module",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/remcohaszing/recma-nextjs-static-props.git"
-  },
-  "bugs": {
-    "url": "https://github.com/remcohaszing/recma-nextjs-static-props/issues"
-  },
+  "repository": "remcohaszing/recma-nextjs-static-props",
+  "bugs": "https://github.com/remcohaszing/recma-nextjs-static-props/issues",
   "homepage": "https://github.com/remcohaszing/recma-nextjs-static-props#readme",
+  "funding": "https://github.com/sponsors/remcohaszing",
   "keywords": [
     "estree",
     "mdx",
