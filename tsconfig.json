@@ -15,9 +15,6 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
-    "paths": {
-      "recma-nextjs-static-props": ["./index"]
-    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
