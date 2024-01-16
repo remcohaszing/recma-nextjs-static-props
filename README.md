@@ -91,7 +91,9 @@ The default export is a recma plugin which exposes variables from the top-level 
 
 ## Example
 
-The source code repository for this plugin is setup as a [Next.js](https://nextjs.org) project.
+The source code repository for this plugin is setup as a [Next.js](https://nextjs.org) project. It
+uses both [`rehype-mdx-title`](https://github.com/remcohaszing/rehype-mdx-title) and
+[`remark-mdx-frontmatter`](https://github.com/remcohaszing/remark-mdx-frontmatter).
 
 To try it yourself, simply clone, install, and run this project:
 
@@ -110,8 +112,8 @@ This project is compatible with Node.js 16 or greater.
 
 This plugin works well with the following [MDX](https://mdxjs.com) plugins:
 
-- [rehype-mdx-title](https://github.com/remcohaszing/rehype-mdx-title)
-- [remark-mdx-frontmatter](https://github.com/remcohaszing/remark-mdx-frontmatter)
+- [`rehype-mdx-title`](https://github.com/remcohaszing/rehype-mdx-title)
+- [`remark-mdx-frontmatter`](https://github.com/remcohaszing/remark-mdx-frontmatter)
 
 ## License
 
