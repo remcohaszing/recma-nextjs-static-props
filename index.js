@@ -1,3 +1,8 @@
+/**
+ * @import { Program } from 'estree'
+ * @import { Plugin } from 'unified'
+ */
+
 import { analyze } from 'periscopic'
 
 /**
@@ -42,7 +47,7 @@ function passTest(test, value) {
  * A recma plugin which exposes variables from the top-level scope in Next.js through
  * `getStaticProps`.
  *
- * @type {import('unified').Plugin<[RecmaNextjsStaticPropsOptions?], import('estree').Program>}
+ * @type {Plugin<[RecmaNextjsStaticPropsOptions?], Program>}
  */
 const recmaNextjsStaticProps =
   ({ exclude, include, name = 'getStaticProps' } = {}) =>

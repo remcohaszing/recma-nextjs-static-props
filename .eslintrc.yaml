@@ -9,3 +9,5 @@ rules:
   n/no-extraneous-import: off
 
   jsdoc/check-indentation: off
+  jsdoc/check-tag-names: off
+  jsdoc/no-undefined-types: off

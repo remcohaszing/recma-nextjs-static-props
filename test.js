@@ -1,3 +1,7 @@
+/**
+ * @import { RecmaNextjsStaticPropsOptions } from 'recma-nextjs-static-props'
+ */
+
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
@@ -199,7 +203,7 @@ export const fn = ''
           recmaNextjsStaticProps,
 
           /**
-           * @type {import('recma-nextjs-static-props').RecmaNextjsStaticPropsOptions}}
+           * @type {RecmaNextjsStaticPropsOptions}}
            */
           ({ include: ['string', /^regex/, (val) => val === 'fn'] })
         ]
@@ -250,7 +254,7 @@ export const fn = ''
           recmaNextjsStaticProps,
 
           /**
-           * @type {import('recma-nextjs-static-props').RecmaNextjsStaticPropsOptions}}
+           * @type {RecmaNextjsStaticPropsOptions}}
            */
           ({
             exclude: ['string', /^regex/, (val) => val === 'fn']
