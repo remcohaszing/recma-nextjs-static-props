@@ -1,5 +1,5 @@
 {
-  "exclude": ["node_modules"],
+  "exclude": ["coverage", "node_modules"],
   "include": ["**/*"],
   "compilerOptions": {
     "allowJs": true,
