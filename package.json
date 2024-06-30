@@ -52,6 +52,7 @@
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.0.0",
     "remark-preset-remcohaszing": "^3.0.0",
+    "snapshot-fixtures": "^1.0.0",
     "typescript": "^5.0.0"
   }
 }
