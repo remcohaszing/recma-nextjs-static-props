@@ -18,14 +18,19 @@
     "recma-plugin",
     "unified"
   ],
-  "exports": "./index.js",
+  "types": "./types/recma-nextjs-static-props.d.ts",
+  "exports": {
+    "types": "./types/recma-nextjs-static-props.d.ts",
+    "default": "./lib/recma-nextjs-static-props.js"
+  },
   "files": [
-    "index.*"
+    "lib",
+    "types"
   ],
   "scripts": {
     "dev": "next dev",
     "test": "c8 node test.js",
-    "prepack": "tsc --noEmit false --emitDeclarationOnly true"
+    "prepack": "tsc --build"
   },
   "dependencies": {
     "@types/estree": "^1.0.0",

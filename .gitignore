@@ -1,7 +1,6 @@
 .next/
 coverage/
 node_modules/
-*.d.ts
-*.map
+types/
 *.tgz
 *.tsbuildinfo

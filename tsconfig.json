@@ -1,22 +1,25 @@
 {
-  "exclude": ["coverage", "fixtures", "node_modules"],
+  "exclude": ["coverage", "lib", "node_modules", "fixtures/*/expected.js"],
   "include": ["**/*"],
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    }
+  ],
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "declaration": true,
-    "declarationMap": true,
     "esModuleInterop": true,
     "incremental": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
+    "module": "preserve",
     "moduleResolution": "bundler",
     "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2019"
+    "target": "esnext"
   }
 }
