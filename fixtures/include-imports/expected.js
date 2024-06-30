@@ -14,6 +14,7 @@ export default function MDXContent(props = {}) {
 }
 export const getStaticProps = () => ({
   props: JSON.parse(JSON.stringify({
+    defaultImported,
     imported
   }))
 });
