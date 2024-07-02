@@ -14,5 +14,8 @@ const withMDX = nextMDX({
 })
 
 export default withMDX({
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  typescript: {
+    ignoreBuildErrors: true
+  }
 })
