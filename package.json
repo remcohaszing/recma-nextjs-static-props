@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "@types/estree": "^1.0.0",
-    "periscopic": "^3.0.0",
+    "estree-util-scope": "^1.0.0",
+    "estree-walker": "^3.0.0",
     "unified": "^11.0.0",
     "unist-util-mdx-define": "^1.0.0"
   },
