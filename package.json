@@ -35,7 +35,8 @@
   "dependencies": {
     "@types/estree": "^1.0.0",
     "periscopic": "^3.0.0",
-    "unified": "^11.0.0"
+    "unified": "^11.0.0",
+    "unist-util-mdx-define": "^1.0.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "^3.0.0",

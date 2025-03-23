@@ -3,6 +3,15 @@ export const ignored = ''
 export const string = ''
 export const regex_foo = ''
 export const fn = ''
+export const getStaticProps = () => ({
+  props: JSON.parse(
+    JSON.stringify({
+      fn,
+      regex_foo,
+      string
+    })
+  )
+})
 function _createMdxContent(props) {
   return _jsx(_Fragment, {})
 }
@@ -17,12 +26,3 @@ export default function MDXContent(props = {}) {
       })
     : _createMdxContent(props)
 }
-export const getStaticProps = () => ({
-  props: JSON.parse(
-    JSON.stringify({
-      fn,
-      regex_foo,
-      string
-    })
-  )
-})
