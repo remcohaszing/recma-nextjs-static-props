@@ -39,7 +39,6 @@
   },
   "devDependencies": {
     "@mdx-js/loader": "^3.0.0",
-    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^15.0.0",
     "@types/react": "^19.0.0",
     "c8": "^9.0.0",
