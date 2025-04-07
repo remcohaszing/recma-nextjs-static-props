@@ -1,5 +1,3 @@
-import { Fragment as _Fragment, jsx as _jsx } from 'react/jsx-runtime'
-import defaultImported, { imported } from 'module'
 export const getStaticProps = () => ({
   props: JSON.parse(
     JSON.stringify({
@@ -8,6 +6,8 @@ export const getStaticProps = () => ({
     })
   )
 })
+import { Fragment as _Fragment, jsx as _jsx } from 'react/jsx-runtime'
+import defaultImported, { imported } from 'module'
 function _createMdxContent(props) {
   return _jsx(_Fragment, {})
 }

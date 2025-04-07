@@ -1,8 +1,3 @@
-import { Fragment as _Fragment, jsx as _jsx } from 'react/jsx-runtime'
-export const ignored = ''
-export const string = ''
-export const regex_foo = ''
-export const fn = ''
 export const getStaticProps = () => ({
   props: JSON.parse(
     JSON.stringify({
@@ -12,6 +7,11 @@ export const getStaticProps = () => ({
     })
   )
 })
+import { Fragment as _Fragment, jsx as _jsx } from 'react/jsx-runtime'
+export const ignored = ''
+export const string = ''
+export const regex_foo = ''
+export const fn = ''
 function _createMdxContent(props) {
   return _jsx(_Fragment, {})
 }
