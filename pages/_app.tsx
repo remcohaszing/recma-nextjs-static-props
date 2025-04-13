@@ -1,9 +1,10 @@
+import './global.css'
+
 import { type AppProps } from 'next/app'
 import Head from 'next/head'
 import { type ReactNode } from 'react'
 
-import './global.css'
-import { PropsList } from '../components/PropsList'
+import { PropsList } from '../components/PropsList.tsx'
 
 /**
  * Next.js uses the `App` component to initialize pages. You can override it and control the page
