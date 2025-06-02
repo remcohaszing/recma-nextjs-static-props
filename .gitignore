@@ -4,3 +4,4 @@ node_modules/
 types/
 *.tgz
 *.tsbuildinfo
+next-env.d.ts
