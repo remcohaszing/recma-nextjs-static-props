@@ -1,8 +1,9 @@
 import './global.css'
 
-import { type AppProps } from 'next/app'
+import type { AppProps } from 'next/app'
+import type { ReactNode } from 'react'
+
 import Head from 'next/head'
-import { type ReactNode } from 'react'
 
 import { PropsList } from '../components/props-list.tsx'
 

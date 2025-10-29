@@ -1,4 +1,6 @@
-import { Fragment, type ReactNode } from 'react'
+import type { ReactNode } from 'react'
+
+import { Fragment } from 'react'
 
 /**
  * Render a list of available props.

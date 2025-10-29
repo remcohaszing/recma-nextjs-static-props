@@ -1,21 +1,16 @@
+import { fileURLToPath } from 'node:url'
+
 import nextMDX from '@next/mdx'
-import recmaNextjsStaticProps from 'recma-nextjs-static-props'
-import rehypeMdxTitle from 'rehype-mdx-title'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
-    rehypePlugins: [rehypeMdxTitle],
-    recmaPlugins: [recmaNextjsStaticProps]
+    remarkPlugins: ['remark-frontmatter', 'remark-mdx-frontmatter'],
+    rehypePlugins: ['rehype-mdx-title'],
+    recmaPlugins: [fileURLToPath(import.meta.resolve('recma-nextjs-static-props'))]
   }
 })
 
 export default withMDX({
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  typescript: {
-    ignoreBuildErrors: true
-  }
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
 })
