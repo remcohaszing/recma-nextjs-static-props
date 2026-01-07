@@ -40,7 +40,7 @@
     "unist-util-mdx-define": "^1.0.0"
   },
   "devDependencies": {
-    "@remcohaszing/eslint": "^12.0.0",
+    "@remcohaszing/eslint": "^13.0.0",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/mdx": "^3.0.0",
     "@next/mdx": "^16.0.0",
