@@ -10,7 +10,6 @@
     "module": "node16",
     "outDir": "types",
     "rootDir": "lib",
-    "skipLibCheck": true,
-    "strict": true
+    "types": ["node"]
   }
 }
