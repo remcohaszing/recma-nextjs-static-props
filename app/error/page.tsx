@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 
 import { readdir, readFile } from 'node:fs/promises'
-import { join } from 'node:path'
 
 /**
  *
@@ -9,14 +8,10 @@ import { join } from 'node:path'
 async function readDirRecursive(): Promise<string[]> {
   const results: string[] = []
   for (const a of await readdir('posts')) {
-    const aDir = join('posts', a)
-    for (const b of await readdir(aDir)) {
-      const bDir = join(aDir, b)
-      for (const c of await readdir(bDir)) {
-        const cDir = join(bDir, c)
-        for (const d of await readdir(cDir)) {
-          // Results.push(await readFile(`posts/${a}/${b}/${c}/${d}`, 'utf8'))
-          results.push(await readFile(join('posts', a, b, c, d), 'utf8'))
+    for (const b of await readdir(`posts/${a}`)) {
+      for (const c of await readdir(`posts/${a}/${b}`)) {
+        for (const d of await readdir(`posts/${a}/${b}/${c}`)) {
+          results.push(await readFile(`posts/${a}/${b}/${c}/${d}`, 'utf8'))
         }
       }
     }
