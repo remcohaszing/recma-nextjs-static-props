@@ -1,11 +1,13 @@
+import type { ReactNode } from 'react'
+
 import { readdir, readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 /**
  *
  */
-async function readDirRecursive() {
-  const results = []
+async function readDirRecursive(): Promise<string[]> {
+  const results: string[] = []
   for (const a of await readdir('posts')) {
     const aDir = join('posts', a)
     for (const b of await readdir(aDir)) {
@@ -26,7 +28,7 @@ async function readDirRecursive() {
 /**
  *
  */
-export default async function Root() {
+export default async function Root(): Promise<ReactNode> {
   const items = await readDirRecursive()
 
   return (
